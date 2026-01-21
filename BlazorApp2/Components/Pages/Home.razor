@@ -1,0 +1,69 @@
+﻿@page "/"
+@page "/reservations"
+
+@rendermode InteractiveServer
+
+@inject BlazorApp2.Data.AppDbContext AppDbContext
+
+<PageTitle>Home</PageTitle>
+
+<h1>Reservation Overview</h1>
+
+Create and manage reservation.
+
+@if(reservations == null) {
+    <p>Loading...</p>
+} else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Customer</th>
+                <th>Date</th>
+                <th>People Count</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            @foreach (var reservation in reservations)
+            {
+                <tr>
+                    <td>@reservation.Id</td>
+                    <td>@reservation.Customer</td>
+                    <td>@reservation.Date.ToShortDateString()</td>
+                    <td>@reservation.PeopleCount</td>
+
+                    <td>
+                        <button @onclick="() => DeleteReservation(reservation.Id)" class="btn btn-sm btn-danger">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+@code {
+    
+    private IEnumerable<Reservation> reservations;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        
+        reservations = AppDbContext.Reservations.ToList();
+    }
+    void DeleteReservation(int id)
+    {
+        var reservation = AppDbContext.Reservations.Find(id);
+        if (reservation != null)
+        {
+            AppDbContext.Reservations.Remove(reservation);
+            AppDbContext.SaveChanges();
+        }
+
+        reservations = AppDbContext.Reservations.ToList();
+    }
+}
