@@ -12,7 +12,7 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["BlazorApp2.csproj", "./"]
+COPY ["BlazorApp2/BlazorApp2.csproj", "BlazorApp2/"]
 RUN dotnet restore "./BlazorApp2/BlazorApp2.csproj"
 COPY . .
 WORKDIR "/src/BlazorApp2"
