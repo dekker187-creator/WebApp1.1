@@ -1,5 +1,5 @@
 # Diese Stufe wird für die Basis-Image-Konfiguration verwendet (ASP.NET Core Runtime).
-FROM mcr.microsoft.com/dotnet/aspnet:10.0 # Verwenden eines Linux-kompatiblen .NET Runtime-Images
+FROM mcr.microsoft.com/dotnet/aspnet:10.0
 WORKDIR /app
 EXPOSE 8080
 EXPOSE 8081
