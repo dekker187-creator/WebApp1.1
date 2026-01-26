@@ -31,7 +31,7 @@ namespace BlazorApp2
 
             app.UseHttpsRedirection();
 
-            app.UseStaticFiles();
+            app.MapStaticAssets(); // Aktiviert Fingerprinting und Kompression für Assets
             app.UseAntiforgery();
 
             app.MapRazorComponents<App>()
