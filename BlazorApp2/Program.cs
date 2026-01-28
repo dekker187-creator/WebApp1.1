@@ -7,6 +7,12 @@ namespace BlazorApp2
 {
     public class Program
     {
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        {
+            // Andere Konfigurationen ...
+
+            app.UseStaticFiles();  // Stellt statische Dateien zur Verfügung, einschließlich Manifest und Service Worker
+        }
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);

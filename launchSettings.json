@@ -4,7 +4,7 @@
       "commandName": "DockerCompose",
       "commandVersion": "1.0",
       "serviceActions": {
-        "blazorapp2": "StartDebugging"
+        "blazorapp2": "StartWithoutDebugging"
       }
     }
   }

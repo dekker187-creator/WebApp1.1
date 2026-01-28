@@ -10,6 +10,52 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\icon\apple-icon-180.png" />
+    <None Include="wwwroot\icon\apple-splash-1125-2436.jpg" />
+    <None Include="wwwroot\icon\apple-splash-1136-640.jpg" />
+    <None Include="wwwroot\icon\apple-splash-1170-2532.jpg" />
+    <None Include="wwwroot\icon\apple-splash-1179-2556.jpg" />
+    <None Include="wwwroot\icon\apple-splash-1206-2622.jpg" />
+    <None Include="wwwroot\icon\apple-splash-1242-2208.jpg" />
+    <None Include="wwwroot\icon\apple-splash-1242-2688.jpg" />
+    <None Include="wwwroot\icon\apple-splash-1260-2736.jpg" />
+    <None Include="wwwroot\icon\apple-splash-1284-2778.jpg" />
+    <None Include="wwwroot\icon\apple-splash-1290-2796.jpg" />
+    <None Include="wwwroot\icon\apple-splash-1320-2868.jpg" />
+    <None Include="wwwroot\icon\apple-splash-1334-750.jpg" />
+    <None Include="wwwroot\icon\apple-splash-1488-2266.jpg" />
+    <None Include="wwwroot\icon\apple-splash-1536-2048.jpg" />
+    <None Include="wwwroot\icon\apple-splash-1620-2160.jpg" />
+    <None Include="wwwroot\icon\apple-splash-1640-2360.jpg" />
+    <None Include="wwwroot\icon\apple-splash-1668-2224.jpg" />
+    <None Include="wwwroot\icon\apple-splash-1668-2388.jpg" />
+    <None Include="wwwroot\icon\apple-splash-1792-828.jpg" />
+    <None Include="wwwroot\icon\apple-splash-2048-1536.jpg" />
+    <None Include="wwwroot\icon\apple-splash-2048-2732.jpg" />
+    <None Include="wwwroot\icon\apple-splash-2160-1620.jpg" />
+    <None Include="wwwroot\icon\apple-splash-2208-1242.jpg" />
+    <None Include="wwwroot\icon\apple-splash-2224-1668.jpg" />
+    <None Include="wwwroot\icon\apple-splash-2266-1488.jpg" />
+    <None Include="wwwroot\icon\apple-splash-2360-1640.jpg" />
+    <None Include="wwwroot\icon\apple-splash-2388-1668.jpg" />
+    <None Include="wwwroot\icon\apple-splash-2436-1125.jpg" />
+    <None Include="wwwroot\icon\apple-splash-2532-1170.jpg" />
+    <None Include="wwwroot\icon\apple-splash-2556-1179.jpg" />
+    <None Include="wwwroot\icon\apple-splash-2622-1206.jpg" />
+    <None Include="wwwroot\icon\apple-splash-2688-1242.jpg" />
+    <None Include="wwwroot\icon\apple-splash-2732-2048.jpg" />
+    <None Include="wwwroot\icon\apple-splash-2736-1260.jpg" />
+    <None Include="wwwroot\icon\apple-splash-2778-1284.jpg" />
+    <None Include="wwwroot\icon\apple-splash-2796-1290.jpg" />
+    <None Include="wwwroot\icon\apple-splash-2868-1320.jpg" />
+    <None Include="wwwroot\icon\apple-splash-640-1136.jpg" />
+    <None Include="wwwroot\icon\apple-splash-750-1334.jpg" />
+    <None Include="wwwroot\icon\apple-splash-828-1792.jpg" />
+    <None Include="wwwroot\icon\manifest-icon-192.maskable.png" />
+    <None Include="wwwroot\icon\manifest-icon-512.maskable.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.2">
       <PrivateAssets>all</PrivateAssets>
@@ -22,6 +68,7 @@
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.23.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    <PackageReference Include="WebEssentials.AspNetCore.PWA" Version="1.0.85" />
   </ItemGroup>
 
 </Project>

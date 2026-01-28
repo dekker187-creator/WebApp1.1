@@ -4,10 +4,24 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meine Blazor App</title>
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Blazor APP 2">
+
+    <link rel="apple-touch-icon" href="icon/apple-icon-180.png">
+
+    <!-- Beispiel für iPhone 15/14 Pro Splash Screen -->
+    <link rel="apple-touch-startup-image" href="icon/apple-splash-1179-2556.jpg" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3)">
+
+    <!-- Dein iPad Splash Screen -->
+    <link rel="apple-touch-startup-image" href="icon/apple-splash-2048-2732.jpg"
+
+    <!-- Manifest Datei -->
+    <link rel="manifest" href="manifest.json" />
     <base href="/" />
-    ...
-    <link rel="manifest" href="@Assets["manifest.json"]" />
-    <ImportMap />
+
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="app.css" />
     <link rel="stylesheet" href="BlazorApp2.styles.css" />
@@ -17,7 +31,21 @@
 
 <body>
     <Routes />
-    <script src="_framework/blazor.web.js"></script>
+    <!-- Nach dem Blazor-Script einfügen -->
+    <script src="_framework/blazor.server.js"></script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+                .then(function (registration) {
+                    console.log('Service Worker registriert mit Scope:', registration.scope);
+                })
+                .catch(function (error) {
+                    console.error('Service Worker Registrierung fehlgeschlagen:', error);
+                });
+        }
+    </script>
+
 </body>
 
 </html>

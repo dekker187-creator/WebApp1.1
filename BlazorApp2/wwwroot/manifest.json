@@ -6,11 +6,35 @@
   "orientation": "portrait",
   "scope": "/",
   "short_name": "webapp",
-  "start_url": "https://webapp.dnfks.de/",
+  "start_url": "/",
   "theme_color": "#ffffff",
   "icons": [
     {
-      "src": "https://webapp.dnfks.de/favicon.png",
+      "src": "icon/manifest-icon-192.maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon/manifest-icon-192.maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icon/manifest-icon-512.maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon/manifest-icon-512.maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/favicon.png",
       "type": "image/png",
       "sizes": "32x32",
       "isSquare": true,

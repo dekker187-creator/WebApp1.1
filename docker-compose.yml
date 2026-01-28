@@ -3,4 +3,4 @@ services:
     image: ${DOCKER_REGISTRY-}blazorapp2
     build:
       context: .
-      dockerfile: BlazorApp2\Dockerfile
+      dockerfile: BlazorApp2/Dockerfile
